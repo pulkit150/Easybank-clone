@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans", sans-serif;
+    font-size: 18px;
+}
+.button-edit{
+    padding: 8px 20px 8px 20px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    background: linear-gradient(to right, 
+    hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: white;
+    position: relative;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 10;
+}
+.middle-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(155, 153, 153);
+    font-family: arial;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.left-part{
+    margin-left: 100px;
+}
+.right-part{
+    margin-right: 100px;
+}
+
+#navButton{
+    display: none;
+}
+.hidden {
+    display: none;
+  }
+  
+  #navOptions {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #navOptions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #navOptions ul li {
+    margin-bottom: 10px;
+  }
+  
+  #navOptions ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #navOptions ul li a:hover {
+    color: #000;
+  }
+
+@media screen and (max-width: 377px){
+.middle-part{
+    display: none;
+}
+.right-part{
+    display:  none;
+}
+.left-part {
+    margin-left: 32px;
+}
+#navButton{
+    display: block;
+}
+.hidden {
+    display: none;
+  }
+  
+  #navOptions {
+    width: 87vw;
+    position: absolute;
+    top: 73px;
+    left: 10px;
+    right: 0px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #navOptions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #navOptions ul li {
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #navOptions ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #navOptions ul li a:hover {
+    color: #000;
+  }
+  #navButton{
+    border: none;
+    background-color: white;
+    width: 20px;
+    margin-right: 25px;
+  }
+}
